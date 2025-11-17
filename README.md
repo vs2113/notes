@@ -1,15 +1,15 @@
 # maven commands
 
-# Clean previous builds
+#Clean previous builds
 mvn clean
 
-# Compile the project
+#Compile the project
 mvn compile
 
-# Package the project into a JAR with dependencies
+#Package the project into a JAR with dependencies
 mvn package
 
-# Run the project
+#Run the project
 java -jar target/BlogWebsite-1.0-SNAPSHOT-jar-with-dependencies.jar
 
 
