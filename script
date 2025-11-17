@@ -1,0 +1,24 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout Code') {
+            steps {
+                git branch: 'main', url: 'https://github.com/<your-username>/portfolio-jenkins.git'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo 'Building Portfolio Website...'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'Deploying website to local folder...'
+                bat 'xcopy * C:\\deploy-portfolio /E /Y /I'
+            }
+        }
+    }
+}
