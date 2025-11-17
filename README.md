@@ -1,3 +1,9 @@
+fitness club website build and deploy using maven
+1. crate two page fitness club web application using html and java
+2. push project repository to github
+3. use Maven to automate compliatiaon , testing and bulid process
+4. Deploy maven-generated .war file on local server
+
 # maven commands
 
 #Clean previous builds
